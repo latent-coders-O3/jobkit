@@ -1,0 +1,60 @@
+{
+  "manifest_version": 3,
+  "name": "JobKit",
+  "version": "1.0",
+  "description": "Store, manage, auto-upload, and track resumes and cover letters on job application sites like LinkedIn and Indeed.",
+  "permissions": [
+    "storage",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.linkedin.com/*",
+        "*://*.indeed.com/*",
+        "*://*.glassdoor.com/*",
+        "*://*.monster.com/*",
+        "*://*.ziprecruiter.com/*",
+        "*://*.careerbuilder.com/*",
+        "*://*.simplyhired.com/*",
+        "*://*.naukri.com/*",
+        "*://*.dice.com/*",
+        "*://*.job.com/*",
+        "*://*.snagajob.com/*",
+        "*://*.usajobs.gov/*",
+        "*://*.jobstreet.com/*",
+        "*://*.jobsdb.com/*",
+        "*://*.seek.com.au/*",
+        "*://*.totaljobs.com/*",
+        "*://*.reed.co.uk/*",
+        "*://*.jobserve.com/*",
+        "*://*.jobsite.co.uk/*",
+        "*://*.workopolis.com/*",
+        "*://*.eluta.ca/*",
+        "*://*.jobbank.gc.ca/*",
+        "*://*.jobs.com/*",
+        "*://*.jobrapido.com/*",
+        "*://*.neuvoo.com/*",
+        "*://*.jobisjob.com/*",
+        "*://*.jobg8.com/*",
+        "*://*.jobcase.com/*",
+        "*://*.jobfinderusa.com/*",
+        "*://*.jobdiagnosis.com/*",
+        "*://*.jobinventory.com/*",
+        "*://*.joblift.com/*",
+        "*://*.jobspider.com/*",
+        "*://*.jobzone.com/*",
+        "*://*.jobserve.com/*",
+        "*://*.jobstreet.com.sg/*",
+        "*://*.jobstreet.com.my/*",
+        "*://*.jobstreet.com.ph/*",
+        "*://*.jobstreet.co.id/*",
+        "*://*.jobstreet.com.vn/*"
+      ],
+      "js": ["autofill.js"]
+    }
+  ]
+}

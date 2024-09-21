@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobKit</title>
+    <link rel="icon" href="images/icon16.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>JobKit</h1>
+    <form id="uploadForm">
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+        
+        <label for="coverLetter">Upload Cover Letter:</label>
+        <input type="file" id="coverLetter" name="coverLetter" accept=".pdf,.doc,.docx">
+        
+        <button type="submit">Save</button>
+    </form>
+    <h2>Job Applications</h2>
+    <div id="jobApplications"></div>
+</body>
+</html>
